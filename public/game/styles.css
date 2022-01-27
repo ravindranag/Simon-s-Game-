@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #011F3F;
+    padding: 0 20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    height: 100%;
+    filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+}
+
+#level-title {
+    margin-top: 40px;
+    font-family: 'Press Start 2P', cursive;
+    color: #FEF2BF;
+}
+
+
+/* .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+} */
+
+.wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.container .row {
+    height: 50%;
+    display: flex;
+}
+
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 20px);
+    border: 10px solid black;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+    border-top-right-radius: 100%;
+    margin: 0%;
+}
+
+.green {
+    background-color: green;
+    border-top-left-radius: 100%;
+    margin: 0%;
+}
+
+.blue {
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    margin: 0%;
+}
+
+.yellow {
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    margin: 0%;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+input[type='button'] {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 30px;
+    padding: 10px 15px;
+    background: #FEF2BF;
+    color: #011F3F;
+    border-radius: 16px;
+    font-size: 1em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000050;
+    color: #FEF2BF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: #011F3F;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.modal img,
+h3 {
+    margin: 20px auto;
+}

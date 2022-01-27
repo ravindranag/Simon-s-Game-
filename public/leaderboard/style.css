@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh;
+    text-align: center;
+    background: #011F3F;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.heading {
+    margin: 32px auto;
+    color: #FEF2BF;
+}
+
+.list {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    margin: 10px 10px;
+    background: #FEF2BF;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.player-name {
+    margin: auto 20px;
+    text-align: start;
+    flex-grow: 1;
+}

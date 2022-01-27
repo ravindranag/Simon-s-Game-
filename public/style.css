@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background: #011F3F;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+input,
+label {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.heading {
+    margin: 80px auto 0;
+    color: #FEF2BF;
+}
+
+.wrapper {
+    padding: 0 16px;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #001a36;
+    padding: 32px 24px;
+    border-radius: 16px;
+}
+
+form label {
+    color: #FEF2BF;
+}
+
+input {
+    padding: 10px 15px;
+}
+
+input[type='text'] {
+    margin: 10px auto 20px;
+    width: 100%;
+    border-radius: 16px;
+    background: #FEF2BF;
+}
+
+input[type='submit'] {
+    width: 100px;
+    margin: 20px auto;
+    color: #FEF2BF;
+    background: #011F3F;
+    border-radius: 16px;
+    border: 1px solid #FEF2BF;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+input[type='submit']:hover {
+    background: #FEF2BF;
+    color: #011F3F;
+}
+
+.error {
+    display: none;
+    color: #ff0000;
+}
